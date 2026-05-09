@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cybersecurity Projects by Nahom Yifru">
+    <title>Projects | Nahom Yifru</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 
+    ============================================
+    NAVIGATION
+    ============================================
+    -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">Nahom Yifru</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 
+    ============================================
+    PAGE HEADER (Lines 30-50)
+    ============================================
+    -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Projects</h1>
+            <p>Hands-on cybersecurity and IT infrastructure projects</p>
+        </div>
+    </section>
+
+    <!-- 
+    ============================================
+    FILTER BUTTONS (Lines 50-70)
+    Add/remove categories as needed
+    JavaScript handles filtering
+    ============================================
+    -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="networking">Networking</button>
+                <button class="filter-btn" data-filter="forensics">Forensics</button>
+                <button class="filter-btn" data-filter="administration">Systems Admin</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ============================================
+    PROJECTS GRID (Lines 70-350)
+    Each project card includes:
+    - ID for anchor links
+    - Data-category for filtering
+    - Image placeholder
+    - Description and tech stack
+    - GitHub link (update with your repos)
+    
+    ADD NEW PROJECTS by copying the project-detail structure
+    ============================================
+    -->
+    <section class="projects-showcase">
+        <div class="container">
+            <!-- Project 1: Active Directory -->
+            <div class="project-detail" id="ad-hardening" data-category="security administration">
+                <div class="project-detail-header">
+                    <h2>Active Directory Hardening Lab</h2>
+                    <div class="project-meta">
+                        <span class="meta-item">Security</span>
+                        <span class="meta-item">Systems Administration</span>
+                    </div>
+                </div>
+                <div class="project-detail-content">
+                    <div class="project-detail-image">
+                        <div class="placeholder-img">AD Security Lab</div>
+                    </div>
+                    <div class="project-detail-text">
+                        <h3>Overview</h3>
+                        <p>
+                            Implemented comprehensive Active Directory security hardening in a lab environment, 
+                            focusing on Group Policy Objects (GPOs) to enforce security baselines and reduce 
+                            attack surface.
+                        </p>
+                        
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Configured password policies with complexity requirements and account lockout thresholds</li>
+                            <li>Implemented audit logging for security events and privilege escalation attempts</li>
+                            <li>Created baseline security documentation and change control procedures</li>
+                            <li>Reduced misconfiguration risk through standardized GPO templates</li>
+                        </ul>
+                        
+                        <h3>Technologies Used</h3>
+                        <div class="tech-tags">
+                            <span>Windows Server 2016</span>
+                            <span>Active Directory</span>
+                            <span>Group Policy</span>
+                            <span>PowerShell</span>
+                        </div>
+                        
+                        <h3>Outcomes</h3>
+                        <p>
+                            Successfully established a hardened AD environment with documented baselines, 
+                            improving auditability and reducing potential security vulnerabilities by implementing 
+                            industry-standard security controls.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/YifruNahom" class="btn btn-primary" target="_blank">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Network Security -->
+            <div class="project-detail" id="network-baseline" data-category="security networking">
+                <div class="project-detail-header">
+                    <h2>Network Device Secure Baseline</h2>
+                    <div class="project-meta">
+                        <span class="meta-item">Networking</span>
+                        <span class="meta-item">Security</span>
+                    </div>
+                </div>
+                <div class="project-detail-content">
+                    <div class="project-detail-image">
+                        <div class="placeholder-img">Network Security</div>
+                    </div>
+                    <div class="project-detail-text">
+                        <h3>Overview</h3>
+                        <p>
+                            Developed and implemented secure baseline configurations for network infrastructure 
+                            devices, focusing on eliminating legacy protocols and enforcing modern security standards.
+                        </p>
+                        
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Disabled insecure legacy services (Telnet, HTTP) across all network devices</li>
+                            <li>Enforced SSH v2 with strong encryption for remote management</li>
+                            <li>Configured role-based access control (RBAC) with privilege levels</li>
+                            <li>Implemented Access Control Lists (ACLs) for network segmentation</li>
+                            <li>Created comprehensive documentation for secure baseline standards</li>
+                        </ul>
+                        
+                        <h3>Technologies Used</h3>
+                        <div class="tech-tags">
+                            <span>Cisco IOS</span>
+                            <span>SSH</span>
+                            <span>ACLs</span>
+                            <span>VLAN</span>
+                            <span>SNMP v3</span>
+                        </div>
+                        
+                        <h3>Outcomes</h3>
+                        <p>
+                            Achieved a hardened network infrastructure with documented secure baseline, 
+                            enabling faster incident triage and reducing exposure to common network-based attacks.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/YifruNahom" class="btn btn-primary" target="_blank">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Steganography -->
+            <div class="project-detail" id="steganography" data-category="forensics">
+                <div class="project-detail-header">
+                    <h2>Steganography Analysis & Detection</h2>
+                    <div class="project-meta">
+                        <span class="meta-item">Digital Forensics</span>
+                        <span class="meta-item">Security</span>
+                    </div>
+                </div>
+                <div class="project-detail-content">
+                    <div class="project-detail-image">
+                        <div class="placeholder-img">Digital Forensics</div>
+                    </div>
+                    <div class="project-detail-text">
+                        <h3>Overview</h3>
+                        <p>
+                            Explored data hiding and extraction techniques using steganography tools to understand 
+                            covert communication methods and develop detection capabilities for digital forensic investigations.
+                        </p>
+                        
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Analyzed various steganographic techniques in image and audio files</li>
+                            <li>Used OpenPuff for multi-carrier steganography testing</li>
+                            <li>Implemented Xiao Steganography for LSB (Least Significant Bit) analysis</li>
+                            <li>Developed detection methodologies for hidden data in digital media</li>
+                            <li>Created documentation on forensic analysis procedures</li>
+                        </ul>
+                        
+                        <h3>Technologies Used</h3>
+                        <div class="tech-tags">
+                            <span>OpenPuff</span>
+                            <span>Xiao Steganography</span>
+                            <span>Kali Linux</span>
+                            <span>Steghide</span>
+                            <span>Forensic Analysis</span>
+                        </div>
+                        
+                        <h3>Outcomes</h3>
+                        <p>
+                            Gained practical understanding of steganographic techniques and detection methods, 
+                            enhancing digital forensics capabilities for identifying covert data transmission.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/YifruNahom" class="btn btn-primary" target="_blank">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+            ============================================
+            ADD MORE PROJECTS HERE (Lines 280-350)
+            Copy the project-detail structure above
+            Update id, data-category, and content
+            ============================================
+            -->
+
+        </div>
+    </section>
+
+    <!-- 
+    ============================================
+    GITHUB CTA (Lines 350-370)
+    ============================================
+    -->
+    <section class="github-cta">
+        <div class="container">
+            <div class="github-content">
+                <h2>View More on GitHub</h2>
+                <p>
+                    Explore my complete project portfolio, code samples, and lab configurations 
+                    on GitHub. All projects include detailed documentation and setup instructions.
+                </p>
+                <a href="https://github.com/YifruNahom" class="btn btn-primary" target="_blank">
+                    Visit My GitHub →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ============================================
+    FOOTER (Lines 370-420)
+    ============================================
+    -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Nahom Yifru</h3>
+                    <p>Cybersecurity & IT Professional</p>
+                    <p>Northern NJ</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:yifrunahom@gmail.com">yifrunahom@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+13017288885">(301) 728-8885</a></p>
+                    <div class="footer-social">
+                        <a href="https://github.com/YifruNahom" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/nahom-yifru-15871b278" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nahom Yifru. Built with a focus on accessibility and clean design.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
